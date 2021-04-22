@@ -1,0 +1,46 @@
+.header {
+  padding: 0 1.875rem;
+  nav {
+    padding-top: 35px;
+    padding-bottom: 60px;
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+  &__logo {
+    img {
+    }
+  }
+  &__menu {
+    //mobile menu
+    > span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: $dkGrayBlue;
+
+      &:not(:last-child) {
+        margin-bottom: 3px;
+      }
+    }
+  }
+  &__links {
+    a {
+      text-decoration: none;
+      color: $dkBlue;
+      text-transform: uppercase;
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 700;
+      font-size: $font-sm;
+      &:not(:last-child) {
+        margin-right: 2.5rem;
+      }
+    }
+    :hover {
+      text-decoration: underline;
+      color: $grayBlue;
+    }
+    :active {
+      color: $grayBlue;
+    }
+  }
+}
