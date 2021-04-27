@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://loufagan.github.io/Project-Tracking-Intro-Component/)
+- Live Site URL: https://loufagan.github.io/Project-Tracking-Intro-Component/
 
 ## My process
 
