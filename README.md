@@ -1,6 +1,6 @@
 # Frontend Mentor - Project tracking intro component solution
 
-This is a solution to the [Project tracking intro component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/project-tracking-intro-component-5d289097500fcb331a67d80e). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Project tracking intro component challenge on Frontend Mentor](https://loufagan.github.io/Project-Tracking-Intro-Component/). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -11,12 +11,7 @@ This is a solution to the [Project tracking intro component challenge on Fronten
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
