@@ -1,6 +1,12 @@
-const { src, dest, watch, series } = require('gulp');
+const {
+  src,
+  dest,
+  watch,
+  series
+} = require('gulp');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const browsersync = require('browser-sync').create();
 
@@ -8,15 +14,20 @@ const browsersync = require('browser-sync').create();
 sass.compiler = require('dart-sass');
 
 // Sass Task
-function scssTask(){
-  return src('app/scss/style.scss', { sourcemaps: true })
+function scssTask() {
+  return src('app/scss/style.scss', {
+      sourcemaps: true
+    })
     .pipe(sass())
+    .pipe(postcss([autoprefixer()]))
     .pipe(postcss([cssnano()]))
-    .pipe(dest('dist', { sourcemaps: '.' }));
+    .pipe(dest('dist', {
+      sourcemaps: '.'
+    }));
 }
 
 // Browsersync Tasks
-function browsersyncServe(cb){
+function browsersyncServe(cb) {
   browsersync.init({
     server: {
       baseDir: '.'
@@ -25,13 +36,13 @@ function browsersyncServe(cb){
   cb();
 }
 
-function browsersyncReload(cb){
+function browsersyncReload(cb) {
   browsersync.reload();
   cb();
 }
 
 // Watch Task
-function watchTask(){
+function watchTask() {
   watch('*.html', browsersyncReload);
   watch(['app/scss/**/*.scss', 'app/js/**/*.js'], series(scssTask, browsersyncReload));
 }
