@@ -1,46 +1,83 @@
 .header {
-  padding: 0 1.875rem;
-  nav {
-    padding-top: 35px;
-    padding-bottom: 60px;
-    padding-left: 29px;
-    padding-right: 29px;
-  }
-  &__logo {
-    img {
-    }
-  }
-  &__menu {
-    //mobile menu
-    > span {
-      display: block;
-      width: 26px;
-      height: 2px;
-      background-color: $dkGrayBlue;
+  position: relative;
+  font-family: "Barlow Condensed", sans-serif;
 
-      &:not(:last-child) {
-        margin-bottom: 3px;
-      }
+  &__logo {
+    padding-top: 1.6rem;
+  }
+}
+.menuMobile_btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.mobile-links {
+  position: absolute;
+  top: -9px;
+  left: 21px;
+  right: 30px;
+  margin-top: 100px;
+  background-color: white;
+  box-shadow: 7px 6px 15px 5px rgba(#000, 0.2);
+  border-radius: 10px;
+
+  &__menu {
+    text-align: center;
+    hr {
+      height: 3px;
+      width: 85%;
+      background-color: $ltGrayBlue;
+      border: none;
     }
   }
-  &__links {
-    a {
-      text-decoration: none;
-      color: $dkBlue;
-      text-transform: uppercase;
-      font-family: "Barlow Condensed", sans-serif;
-      font-weight: 700;
-      font-size: $font-sm;
-      &:not(:last-child) {
-        margin-right: 2.5rem;
-      }
+  a {
+    display: block;
+    margin-bottom: 1.5rem;
+    color: $dkBlue;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+
+    &:first-child {
+      margin-top: 1rem;
     }
-    :hover {
+    &:last-child {
+      padding-top: 0.5rem;
+      color: $grayBlue;
+    }
+  }
+}
+.nav-links {
+  position: relative;
+  a {
+    color: $dkBlue;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 2.8125rem;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
       text-decoration: underline;
-      color: $grayBlue;
     }
-    :active {
+
+    &:last-child {
       color: $grayBlue;
+      margin-left: 1.4rem;
     }
+  }
+  > span {
+    position: absolute;
+    top: -142%;
+    left: 71%;
+    font-size: 3rem;
   }
 }

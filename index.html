@@ -10,17 +10,6 @@
 
   <title>Frontend Mentor | Project tracking intro component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,49 +17,66 @@
   <link rel="stylesheet" href="./dist/style.css">
 </head>
 
-<body>
-  <header class="header">
-    <nav class="flex flex-jc-sb flex-ai-c">
-      <a href="/" class="header__logo">
-        <img src="./img/logo.svg" alt="Logo"></a>
-      <a href="#" class="header__menu hide-for-desktop">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
+<body flex>
+  <div class="wrapper">
+    <div class="overlay"></div>
+    <header class="header container">
+      <nav class="nav flex flex-jc-sb flex-ai-c">
+        <div class="header__logo">
+          <a href="#"><img src="../img/logo.svg" alt="logo"></a></div>
 
-      <div class="header__links hide-for-mobile">
-
-        <a href="#">Product</a>
-        <a href="#">Features</a>
-        <a href="#">Pricing</a>
-        <a href="#">.</a>
-        <a href="#"> Login</a>
+        <div class="menuMobile_btn menuMobile__close hide-for-desktop"><img src="../img/icon-hamburger.svg"
+            alt="menu button">
+        </div>
+        <div class="menuMobile_btn menuMobile__open hidden hide-for-desktop"><img src="../img/icon-close.svg"
+            alt="menu button">
+        </div>
+        <div class="nav-links hide-for-mobile">
+          <a href="#">Product</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <span>.</span>
+          <a href="#">Login</a>
+        </div>
+      </nav>
+      <div class="mobile-links hide-for-desktop hidden">
+        <div class="mobile-links__menu hide-for-desktop ">
+          <a href="#">Product</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <hr>
+          <a href="#">Login</a>
+        </div>
       </div>
+    </header>
+    <section class="main">
+      <div class="text">
+        <div class="text__top">
+          <span>New</span>
+          <p class="text__topTitle">Monograph Dashboard</p>
+        </div>
+        <div class="text__bigTitle">
+          <h1>
+            Powerful insights into your team</h1>
+        </div>
+        <div class="text__para">Project planning and time tracking for agile teams</div>
+        <div class="text__button">
+          <a href="#"> Schedule a demo</a>
+          <span class="text__preview">to see a preview</span>
+        </div>
+      </div>
+      <div class="image">
+        <img src="../img/illustration-devices.svg" alt="">
+      </div>
+    </section>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#"> Louise Fagan</a>
+      </div>
+  </div>
+  </footer>
 
-    </nav>
-
-  </header>
-  <!--  
-  
-  
- 
-
-  New
-  Monograph Dashboard
-
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
-
-  Schedule a demo
-  to see a live preview
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer> -->
   <script src="./app/js/script.js"></script>
 </body>
 

@@ -1,0 +1,117 @@
+.main {
+  padding: 8rem 0;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 9rem;
+  overflow: hidden;
+  @include tablet {
+    padding: 5rem 0 5rem 3rem;
+  }
+  @include mobile {
+    flex-direction: column-reverse;
+    padding: 3rem 0;
+  }
+}
+.text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 2rem 0;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+
+  @include tablet {
+    text-align: left;
+  }
+  @include desktop {
+    padding-left: 4rem;
+  }
+
+  &__top {
+    > span {
+      background-color: $dkBlue;
+      color: white;
+      border-radius: 50px;
+      padding: 5px 12px;
+      font-size: 0.875rem;
+      font-weight: 700;
+    }
+  }
+  &__topTitle {
+    padding-left: 0.625rem;
+    display: inline-flex;
+    letter-spacing: 3px;
+
+    font-size: 1rem;
+  }
+  &__bigTitle {
+    h1 {
+      color: $dkBlue;
+      font-size: 2.2rem;
+      font-weight: 700;
+
+      @include tablet {
+        font-size: 3rem;
+        text-align: left;
+      }
+      @include desktop {
+        width: 25rem;
+        font-size: 3rem;
+      }
+    }
+  }
+  &__para {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-family: "Barlow", sans-serif;
+    text-transform: initial;
+    @include desktop {
+      margin-bottom: 2rem;
+      width: 18.75rem;
+    }
+  }
+  &__button {
+    margin-top: 2rem;
+    a {
+      display: inline-block;
+      line-height: 35px;
+      text-align: center;
+      text-decoration: none;
+      background-color: $red;
+      width: 120px;
+      height: 37px;
+      border-radius: 3px;
+      color: $ltGrayBlue;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 0.8rem;
+    }
+  }
+  &__preview {
+    padding-left: 0.625rem;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    @include desktop {
+      padding-left: 1.25rem;
+    }
+  }
+}
+.image {
+  @include tablet {
+    margin-right: -11rem;
+  }
+
+  img {
+    width: 120%;
+    margin-left: 3.125rem;
+    @include desktop {
+      width: 129%;
+      margin-right: -17.5rem;
+    }
+    @include tablet {
+      width: 40rem;
+    }
+  }
+}
